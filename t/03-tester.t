@@ -1,6 +1,12 @@
-use Test::Tester tests => 28;
+use strict;
+use warnings;
 
-use Test::Uses;
+use Test::Tester tests => 29;
+use Test::More;
+
+BEGIN {
+    use_ok('Test::Uses');   
+}
 
 check_test(
     sub {
